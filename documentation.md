@@ -10,13 +10,13 @@ Also see [this site](http://www.bt4uclassic.org/webservices/bt4u_webservice.asmx
 
 ## Endpoints Overview
 
-### 1. CheckForKnownPlace
+### 1. [CheckForKnownPlace](http://www.bt4uclassic.org/webservices/bt4u_webservice.asmx?op=CheckForKnownPlace)
 
 | **Element** | **Type** | **Description** |
 |------------------|------------------|-----------------------------------|
 | `placeName` | string | The name of the place to be checked (e.g., "Blacksburg Transit"). |
 
-### 2. GetActiveAlerts
+### 2. [GetActiveAlerts](http://www.bt4uclassic.org/webservices/bt4u_webservice.asmx?op=GetActiveAlerts)
 
 | **Element**    | **Type** | **Description**                     |
 |----------------|----------|-------------------------------------|
@@ -24,28 +24,28 @@ Also see [this site](http://www.bt4uclassic.org/webservices/bt4u_webservice.asmx
 | `alertCauses`  | string   | Shows the causes of active alerts.  |
 | `alertEffects` | string   | Shows the effects of active alerts. |
 
-### 3. GetAlertCauses
+### 3. [GetAlertCauses](http://www.bt4uclassic.org/webservices/bt4u_webservice.asmx?op=GetAlertCauses)
 
 | **Element**      | **Type** | **Description**                        |
 |------------------|----------|----------------------------------------|
 | `alertCausesID`  | integer  | Specifies ID of alert cause.           |
 | `alertCauseName` | string   | Specifies the name of the alert cause. |
 
-### 4. GetAlertEffects
+### 4. [GetAlertEffects](http://www.bt4uclassic.org/webservices/bt4u_webservice.asmx?op=GetAlertEffects)
 
 | **Element**       | **Type** | **Description**                         |
 |-------------------|----------|-----------------------------------------|
 | `alertEffectsID`  | integer  | Specifies ID of alert effect.           |
 | `alertEffectName` | string   | Specifies the name of the alert effect. |
 
-### 5. GetAlertTypes
+### 5. [GetAlertTypes](http://www.bt4uclassic.org/webservices/bt4u_webservice.asmx?op=GetAlertTypes)
 
 | **Element**     | **Type** | **Description**                     |
 |-----------------|----------|-------------------------------------|
 | `alertTypesID`  | integer  | Specifies the ID of the alert type. |
 | `alertTypeName` | string   | Name of the alert type.             |
 
-### 6. GetAllAlerts
+### 6. [GetAllAlerts](http://www.bt4uclassic.org/webservices/bt4u_webservice.asmx?op=GetAllAlerts)
 
 | **Element**      | **Type** | **Description**                               |
 |------------------|------------------|-----------------------------------|
@@ -61,7 +61,7 @@ Also see [this site](http://www.bt4uclassic.org/webservices/bt4u_webservice.asmx
 | `version`        | dateTime | Date-time of the latest update.               |
 | `alertRank`      | integer  | Degree of alert urgency.                      |
 
-### 7. GetAllPlaces
+### 7. [GetAllPlaces](http://www.bt4uclassic.org/webservices/bt4u_webservice.asmx?op=GetAllPlaces)
 
 | **Element**    | **Type** | **Description**                      |
 |----------------|----------|--------------------------------------|
@@ -73,7 +73,7 @@ Also see [this site](http://www.bt4uclassic.org/webservices/bt4u_webservice.asmx
 | `display`      | boolean  | Specifies if the place is displayed. |
 | `version`      | dateTime | Date-time of the latest update.      |
 
-### 8. GetArrivalAndDepartureTimesForRoutes
+### 8. [GetArrivalAndDepartureTimesForRoutes](http://www.bt4uclassic.org/webservices/bt4u_webservice.asmx?op=GetArrivalAndDepartureTimesForRoutes)
 
 | **Element** | **Type** | **Description** |
 |------------------|------------------|-----------------------------------|
@@ -81,7 +81,7 @@ Also see [this site](http://www.bt4uclassic.org/webservices/bt4u_webservice.asmx
 | `noOfTrips` | string | Number of trips for the specified route. |
 | `serviceDate` | string | Date of arrival/departure times (Eastern Standard Time). |
 
-### 9. GetCurrentBusInfo
+### 9. [GetCurrentBusInfo](http://www.bt4uclassic.org/webservices/bt4u_webservice.asmx?op=GetCurrentBusInfo)
 
 | **Element** | **Type** | **Description** |
 |-------------------|-------------------|-----------------------------------|
@@ -92,7 +92,7 @@ Also see [this site](http://www.bt4uclassic.org/webservices/bt4u_webservice.asmx
 | `direction` | integer | Degree the vehicle is facing at the latestEvent time. |
 | `speed` | string | Speed of the vehicle at the latestEvent time in MPH. |
 
-### 10. GetNearestStops
+### 10. [GetNearestStops](http://www.bt4uclassic.org/webservices/bt4u_webservice.asmx?op=GetNearestStops)
 
 | **Element**   | **Type** | **Description**                                 |
 |---------------|----------|-------------------------------------------------|
@@ -100,13 +100,3 @@ Also see [this site](http://www.bt4uclassic.org/webservices/bt4u_webservice.asmx
 | `longitude`   | decimal  | Specify Longitude.                              |
 | `noOfStops`   | string   | Specify the number of closest stops to display. |
 | `serviceDate` | string   | Specify availability by a given service date.   |
-
-------------------------------------------------------------------------
-
-## General Notes
-
-1.  **Date Formats**: Service dates follow the format `YYYY-MM-DD`.
-2.  **Coordinates**: Latitude and longitude values should be specified in decimal format.
-3.  **Endpoints**: Access the endpoints through the designated developer API URL provided by Blacksburg Transit.
-
-If you need further information about any of these endpoints or examples of how to use them, please refer to the official API guide provided by **Blacksburg Transit**.
