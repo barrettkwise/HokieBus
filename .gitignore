@@ -4,3 +4,4 @@ __pycache__
 schedules
 src/.env
 .env
+documentation.md
