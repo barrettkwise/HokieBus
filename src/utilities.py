@@ -1,27 +1,84 @@
+import json
 import xml.etree.ElementTree as ET
 from typing import Any
 
 import requests
 
 
+def __req_get_nearest_stops(
+    latitude: float, longitude: float, noOfStops: int, serviceDate: str
+) -> dict[str, Any]:
+    """
+    Get the nearest stops to a given set of GPS coordinates.
+
+    :param latitude: The latitude of the GPS coordinates.
+    :type latitude: float
+    :param longitude: The longitude of the GPS coordinates.
+    :type longitude: float
+    :param noOfStops: The number of stops to return.
+    :type noOfStops: int
+    :param serviceDate: The service date.
+    :type serviceDate: str
+    :return: The result of the request.
+    :rtype: dict[str, Any]
+    """
+
+    url = "http://216.252.195.248/webservices/bt4u_webservice.asmx/GetNearestStops"
+    data = {
+        "latitude": str(latitude),
+        "longitude": str(longitude),
+        "noOfStops": str(noOfStops),
+        "serviceDate": serviceDate,
+    }
+
+    try:
+        response = requests.post(url, data=data)
+        response.raise_for_status()  # Raise an exception for HTTP errors
+
+        root = ET.fromstring(response.content)
+        result = [
+            {
+                "StopName": stop.find("StopName").text,
+                "StopCode": stop.find("StopCode").text,
+                "Feet": float(stop.find("Feet").text),
+                "Miles": float(stop.find("Miles").text),
+                "Latitude": float(stop.find("Latitude").text),
+                "Longitude": float(stop.find("Longitude").text),
+            }
+            for stop in root.findall("StopDistances")
+        ]
+        exception = None
+    except requests.exceptions.RequestException as e:
+        response = None
+        root = None
+        result = []
+        exception = e
+
+    return {
+        "given_cords": (latitude, longitude),
+        "status_code": response.status_code if response else None,
+        "content": response.content if response else None,
+        "json": json.dumps(result, indent=2),
+        "xml": root,
+        "exception": exception,
+    }
+
+
 def __req_get_arrival_and_departure_times_for_trip(tripID: str) -> dict[str, Any]:
-    exception = None
     try:
         req = requests.post(
             "http://216.252.195.248/webservices/bt4u_webservice.asmx/GetArrivalAndDepartureTimesForTrip",
             data={"tripID": tripID},
         )
-    except requests.exceptions.RequestException as e:
-        exception = e
-
-    if not exception:
         content = req.content
         code = req.status_code
-        root = ET.fromstring(req.content)
-    else:
+        root = ET.fromstring(content)
+        exception = None
+    except requests.exceptions.RequestException as e:
+        content = None
         code = None
         root = None
-        content = None
+        exception = e
 
     return {
         "status_code": code,
@@ -30,24 +87,20 @@ def __req_get_arrival_and_departure_times_for_trip(tripID: str) -> dict[str, Any
         "exception": exception,
     }
 
-
 def __req_get_current_bus_info() -> dict[str, Any]:
-    exception = None
     try:
         req = requests.post(
-            "http://216.252.195.248/webservices/bt4u_webservice.asmx/GetCurrentBusInfo"
+            "http://216.252.195.248/webservices/bt4u_webservice.asmx/GetCurrentBusInfo",
         )
-    except requests.exceptions.RequestException as e:
-        exception = e
-
-    if not exception:
         content = req.content
         code = req.status_code
-        root = ET.fromstring(req.content)
-    else:
+        root = ET.fromstring(content)
+        exception = None
+    except requests.exceptions.RequestException as e:
+        content = None
         code = None
         root = None
-        content = None
+        exception = e
 
     return {
         "status_code": code,
