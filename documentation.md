@@ -4,6 +4,8 @@
 
 The [Blacksburg Transit Developer API](https://ridebt.org/developers) allows developers to access various transit-related data for creating web or mobile applications. Below is a list of all the available methods, including their elements, types, and descriptions.
 
+Also see [this site](http://www.bt4uclassic.org/webservices/bt4u_webservice.asmx) for more information.
+
 ------------------------------------------------------------------------
 
 ## Endpoints Overview
@@ -11,7 +13,7 @@ The [Blacksburg Transit Developer API](https://ridebt.org/developers) allows dev
 ### 1. CheckForKnownPlace
 
 | **Element** | **Type** | **Description** |
-|------------------|------------------|------------------------------------|
+|------------------|------------------|-----------------------------------|
 | `placeName` | string | The name of the place to be checked (e.g., "Blacksburg Transit"). |
 
 ### 2. GetActiveAlerts
@@ -46,7 +48,7 @@ The [Blacksburg Transit Developer API](https://ridebt.org/developers) allows dev
 ### 6. GetAllAlerts
 
 | **Element**      | **Type** | **Description**                               |
-|------------------|------------------|------------------------------------|
+|------------------|------------------|-----------------------------------|
 | `alertID`        | integer  | The ID of the alert.                          |
 | `alertTypesID`   | integer  | Specifies the ID of the alert type.           |
 | `alertCausesID`  | integer  | Specifies the cause ID of the alert.          |
@@ -74,7 +76,7 @@ The [Blacksburg Transit Developer API](https://ridebt.org/developers) allows dev
 ### 8. GetArrivalAndDepartureTimesForRoutes
 
 | **Element** | **Type** | **Description** |
-|------------------|------------------|------------------------------------|
+|------------------|------------------|-----------------------------------|
 | `routeShortNames` | string | The short name of the route (e.g., "HWA" for Hethwood A). |
 | `noOfTrips` | string | Number of trips for the specified route. |
 | `serviceDate` | string | Date of arrival/departure times (Eastern Standard Time). |
@@ -82,7 +84,7 @@ The [Blacksburg Transit Developer API](https://ridebt.org/developers) allows dev
 ### 9. GetCurrentBusInfo
 
 | **Element** | **Type** | **Description** |
-|-------------------|-------------------|------------------------------------|
+|-------------------|-------------------|-----------------------------------|
 | `agencyVehicleName` | string | Number assigned to the vehicle (e.g., "6403"). |
 | `latestEvent` | string | Date-time of the latest event for the vehicle. |
 | `latitude` | decimal | Latitude. |
