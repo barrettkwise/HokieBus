@@ -2,6 +2,7 @@ import os
 import re
 from dataclasses import dataclass
 from datetime import datetime
+from http.client import HTTPException
 from pathlib import Path
 from typing import Union
 
@@ -45,7 +46,7 @@ class Address:
         :rtype: tuple[Union[float, None], Union[float, None]]
         """
         try:
-            req = requests.get(
+            response = requests.get(
                 "https://geocode.maps.co/search",
                 params={
                     "q": str(self),
@@ -53,14 +54,13 @@ class Address:
                     "format": "json",
                 },
             )
-            data = req.json()
-            lat = float(data[0]["lat"])
-            lon = float(data[0]["lon"])
-        except requests.exceptions.RequestException:
-            lat = 0.0
-            lon = 0.0
-
-        return lat, lon
+            position_data = response.json()
+            return (
+                float(position_data[0]["lat"]),
+                float(position_data[0]["lon"]),
+            )
+        except HTTPException as e:
+            raise e
 
     def __str__(self) -> str:
         return f"{self.street}, {self.city}, {self.county}, {self.state}, {self.zip_code}, {self.country}"
@@ -82,7 +82,7 @@ class Schedule:
     :type init_location: Address
     """
 
-    def __init__(self, source_file: str, init_location: Address) -> None:
+    def __init__(self, init_location: Address, source_file: str = "") -> None:
         self.__source = Path(source_file)
         if self.__source.suffix != ".ics":
             raise ValueError("The source file must be a .ics file.")
