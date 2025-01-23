@@ -1,6 +1,5 @@
 from dotenv import load_dotenv
 
-from bt4u_interface import BT4U_Interface as bt4u
 from routefinder import RouteFinder
 from schedule import Address, Schedule
 

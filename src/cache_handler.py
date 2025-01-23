@@ -1,4 +1,5 @@
 from datetime import datetime
+from json import dumps
 from pathlib import Path
 from typing import Callable
 
@@ -43,8 +44,10 @@ class CacheHandler:
         if time_since_mod.total_seconds() / 3600 > self.update_freq:
             print("Updating cache...")
             open(self.cache_file, "w").close()  # Clear the cache file
+            print("Cache cleared.")
             new_data = self.update_function(update=True)
-            self.cache_file.write_text(new_data)
+            print("Data fetched.")
+            self.cache_file.write_text(dumps(new_data))
             print("Cache updated.")
         else:
             print("Cache is up to date.")
