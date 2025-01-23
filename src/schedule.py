@@ -42,27 +42,25 @@ class Address:
         self.latitude = self.__convert_address_to_gps()[0]
         self.longitude = self.__convert_address_to_gps()[1]
 
-    def __convert_address_to_gps(self) -> tuple[float | None, float | None]:
+    def __convert_address_to_gps(self) -> tuple[float, float]:
         """
         Convert the address to GPS coordinates.
 
         :return: The latitude and longitude of the address.
-        :rtype: tuple[Union[float, None], Union[float, None]]
+        :rtype: tuple[float, float]
         """
         client = GeocodioClient(os.getenv("GEOCODE_KEY"))
-        try:
-            location = client.geocode(
-                f"{self.street}, {self.city}, {self.state} {self.zip_code}",
-                country=self.country,
-                limit=3,
-            )
-            if location and location.get("results"):
-                coords = location["results"][0]["location"]
-                return (coords["lat"], coords["lng"])
-            return (None, None)
-        except Exception as e:
-            print(f"Error converting address to GPS: {e}")
-            return (None, None)
+
+        location = client.geocode(
+            f"{self.street}, {self.city}, {self.state} {self.zip_code}",
+            country=self.country,
+            limit=3,
+        )
+        if location is None:
+            raise ValueError("Invalid address.")
+
+        coords = location["results"][0]["location"]
+        return (coords["lat"], coords["lng"])
 
     def __str__(self) -> str:
         return (

@@ -38,6 +38,14 @@ class RouteFinder:
             RouteFinder.get_campus_addresses,
         )
         self.buildings = json.loads(address_cache.cache_file.read_text())
+        bus_stop = bt4u.get_nearest_stops(
+            self.schedule.init_location.latitude,
+            self.schedule.init_location.longitude,
+            1,
+        )
+        print(
+            f"Closest bus stop to {self.schedule.init_location.street} is {bus_stop}."
+        )
         for course in self.schedule.courses:
             building = course["building"]
             if building not in self.buildings.keys():
