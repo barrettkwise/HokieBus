@@ -1,0 +1,1136 @@
+{
+    "New Hall West": {
+        "street": "190 West Campus Drive",
+        "city": "Blacksburg",
+        "state": "Virginia",
+        "zip_code": "24061",
+        "country": "United States",
+        "latitude": 37.222114,
+        "longitude": -80.422747
+    },
+    "Cochrane Hall": {
+        "street": "770 Washington St. SW",
+        "city": "Blacksburg",
+        "state": "Virginia",
+        "zip_code": "24061",
+        "country": "United States",
+        "latitude": 37.222655,
+        "longitude": -80.421894
+    },
+    "John W. Hancock Jr. Hall": {
+        "street": "490 Old Turner St.",
+        "city": "Blacksburg",
+        "state": "Virginia",
+        "zip_code": "24061",
+        "country": "United States",
+        "latitude": 37.230164,
+        "longitude": -80.424275
+    },
+    "Cassell Coliseum": {
+        "street": "675 Washington St. SW",
+        "city": "Blacksburg",
+        "state": "Virginia",
+        "zip_code": "24061",
+        "country": "United States",
+        "latitude": 37.222621,
+        "longitude": -80.419056
+    },
+    "Graduate Life Center at Donaldson Brown": {
+        "street": "155 Otey St. NW",
+        "city": "Blacksburg",
+        "state": "Virginia",
+        "zip_code": "24061",
+        "country": "United States",
+        "latitude": 37.228225,
+        "longitude": -80.417568
+    },
+    "Surge Space Building": {
+        "street": "400 Stanger St.",
+        "city": "Blacksburg",
+        "state": "Virginia",
+        "zip_code": "24061",
+        "country": "United States",
+        "latitude": 37.233074,
+        "longitude": -80.423129
+    },
+    "Hahn Hurst Basketball Practice Center": {
+        "street": "605 Washington St. SW",
+        "city": "Blacksburg",
+        "state": "Virginia",
+        "zip_code": "24061",
+        "country": "United States",
+        "latitude": 37.223347,
+        "longitude": -80.41806
+    },
+    "The Grove": {
+        "street": "225 Grove Lane",
+        "city": "Blacksburg",
+        "state": "Virginia",
+        "zip_code": "24061",
+        "country": "United States",
+        "latitude": 37.224328,
+        "longitude": -80.427314
+    },
+    "Goodwin Hall": {
+        "street": "635 Prices Fork Road",
+        "city": "Blacksburg",
+        "state": "Virginia",
+        "zip_code": "24061",
+        "country": "United States",
+        "latitude": 37.232393,
+        "longitude": -80.425819
+    },
+    "Squires Student Center": {
+        "street": "290 College Ave.",
+        "city": "Blacksburg",
+        "state": "Virginia",
+        "zip_code": "24061",
+        "country": "United States",
+        "latitude": 37.229627,
+        "longitude": -80.41796
+    },
+    "The Inn at Virginia Tech": {
+        "street": "901 Prices Fork Road",
+        "city": "Blacksburg",
+        "state": "Virginia",
+        "zip_code": "24061",
+        "country": "United States",
+        "latitude": 37.230408,
+        "longitude": -80.431622
+    },
+    "Thomas Hall": {
+        "street": "191 Turner St. NW",
+        "city": "Blacksburg",
+        "state": "Virginia",
+        "zip_code": "24061",
+        "country": "United States",
+        "latitude": 37.232307,
+        "longitude": -80.41985
+    },
+    "Bishop-Favrao Hall": {
+        "street": "1345 Perry St.",
+        "city": "Blacksburg",
+        "state": "Virginia",
+        "zip_code": "24061",
+        "country": "United States",
+        "latitude": 37.230062,
+        "longitude": -80.425523
+    },
+    "New Residence Hall - East": {
+        "street": "590 Washington St. SW",
+        "city": "Blacksburg",
+        "state": "Virginia",
+        "zip_code": "24061",
+        "country": "United States",
+        "latitude": 37.225545,
+        "longitude": -80.419182
+    },
+    "War Memorial Chapel": {
+        "street": "601 Drillfield Drive",
+        "city": "Blacksburg",
+        "state": "Virginia",
+        "zip_code": "24061",
+        "country": "United States",
+        "latitude": 37.228853,
+        "longitude": -80.420451
+    },
+    "Sochinski-McKee Marching Virginians Center": {
+        "street": "821 Southgate Drive",
+        "city": "Blacksburg",
+        "state": "Virginia",
+        "zip_code": "24061",
+        "country": "United States",
+        "latitude": 37.215715,
+        "longitude": -80.414944
+    },
+    "Jamerson Athletic Center": {
+        "street": "21 Beamer Way",
+        "city": "Blacksburg",
+        "state": "Virginia",
+        "zip_code": "24061",
+        "country": "United States",
+        "latitude": 37.222138,
+        "longitude": -80.418641
+    },
+    "Virginia Tech Golf Course Pro Shop": {
+        "street": "1085 Duck Pond Drive",
+        "city": "Blacksburg",
+        "state": "Virginia",
+        "zip_code": "24061",
+        "country": "United States",
+        "latitude": 37.226794,
+        "longitude": -80.428657
+    },
+    "Theatre 101": {
+        "street": "200 College Ave.",
+        "city": "Blacksburg",
+        "state": "Virginia",
+        "zip_code": "24061",
+        "country": "United States",
+        "latitude": 37.230259,
+        "longitude": -80.416379
+    },
+    "Burrows-Burleson Tennis Center": {
+        "street": "570 Beamer Way",
+        "city": "Blacksburg",
+        "state": "Virginia",
+        "zip_code": "24061",
+        "country": "United States",
+        "latitude": 37.214834,
+        "longitude": -80.419307
+    },
+    "Hutcheson Hall": {
+        "street": "250 Drillfield Drive",
+        "city": "Blacksburg",
+        "state": "Virginia",
+        "zip_code": "24061",
+        "country": "United States",
+        "latitude": 37.225744,
+        "longitude": -80.422923
+    },
+    "Durham Hall": {
+        "street": "1145 Perry St.",
+        "city": "Blacksburg",
+        "state": "Virginia",
+        "zip_code": "24061",
+        "country": "United States",
+        "latitude": 37.231663,
+        "longitude": -80.423679
+    },
+    "Dietrick Hall": {
+        "street": "285 Ag Quad Lane",
+        "city": "Blacksburg",
+        "state": "Virginia",
+        "zip_code": "24061",
+        "country": "United States",
+        "latitude": 37.224483,
+        "longitude": -80.421031
+    },
+    "Steger Hall": {
+        "street": "1015 Life Science Circle",
+        "city": "Blacksburg",
+        "state": "Virginia",
+        "zip_code": "24061",
+        "country": "United States",
+        "latitude": 37.221056,
+        "longitude": -80.426469
+    },
+    "Williams Hall": {
+        "street": "890 Drillfield Drive",
+        "city": "Blacksburg",
+        "state": "Virginia",
+        "zip_code": "24061",
+        "country": "United States",
+        "latitude": 37.227842,
+        "longitude": -80.42435
+    },
+    "Vawter Hall": {
+        "street": "180 Kent St.",
+        "city": "Blacksburg",
+        "state": "Virginia",
+        "zip_code": "24061",
+        "country": "United States",
+        "latitude": 37.226844,
+        "longitude": -80.417656
+    },
+    "Cowgill Hall": {
+        "street": "1325 Perry St.",
+        "city": "Blacksburg",
+        "state": "Virginia",
+        "zip_code": "24061",
+        "country": "United States",
+        "latitude": 37.230242,
+        "longitude": -80.425185
+    },
+    "Payne Hall": {
+        "street": "600 Washington St. SW",
+        "city": "Blacksburg",
+        "state": "Virginia",
+        "zip_code": "24061",
+        "country": "United States",
+        "latitude": 37.225828,
+        "longitude": -80.420005
+    },
+    "Pritchard Hall": {
+        "street": "630 Washington St. SW",
+        "city": "Blacksburg",
+        "state": "Virginia",
+        "zip_code": "24061",
+        "country": "United States",
+        "latitude": 37.224202,
+        "longitude": -80.4198
+    },
+    "Major Williams Hall": {
+        "street": "220 Stanger St.",
+        "city": "Blacksburg",
+        "state": "Virginia",
+        "zip_code": "24061",
+        "country": "United States",
+        "latitude": 37.231063,
+        "longitude": -80.420781
+    },
+    "Military Building": {
+        "street": "320 Stanger St.",
+        "city": "Blacksburg",
+        "state": "Virginia",
+        "zip_code": "24061",
+        "country": "United States",
+        "latitude": 37.231725,
+        "longitude": -80.421348
+    },
+    "Lavery Hall": {
+        "street": "430 Old Turner St.",
+        "city": "Blacksburg",
+        "state": "Virginia",
+        "zip_code": "24061",
+        "country": "United States",
+        "latitude": 37.231182,
+        "longitude": -80.422784
+    },
+    "North End Center": {
+        "street": "300 Turner St. NW",
+        "city": "Blacksburg",
+        "state": "Virginia",
+        "zip_code": "24061",
+        "country": "United States",
+        "latitude": 37.233061,
+        "longitude": -80.421005
+    },
+    "Health and Safety Building": {
+        "street": "675 Research Center Drive",
+        "city": "Blacksburg",
+        "state": "Virginia",
+        "zip_code": "24061",
+        "country": "United States",
+        "latitude": 37.179115,
+        "longitude": -80.351482
+    },
+    "Harper Hall": {
+        "street": "240 West Campus Drive",
+        "city": "Blacksburg",
+        "state": "Virginia",
+        "zip_code": "24061",
+        "country": "United States",
+        "latitude": 37.22248,
+        "longitude": -80.423064
+    },
+    "Smith Career Center (Career and Professional Development)": {
+        "street": "870 Washington St. SW",
+        "city": "Blacksburg",
+        "state": "Virginia",
+        "zip_code": "24061",
+        "country": "United States",
+        "latitude": 37.221565,
+        "longitude": -80.422569
+    },
+    "Solitude": {
+        "street": "705 West Campus Drive",
+        "city": "Blacksburg",
+        "state": "Virginia",
+        "zip_code": "24061",
+        "country": "United States",
+        "latitude": 37.226188,
+        "longitude": -80.426883
+    },
+    "Skelton Conference Center": {
+        "street": "901 Prices Fork Road",
+        "city": "Blacksburg",
+        "state": "Virginia",
+        "zip_code": "24061",
+        "country": "United States",
+        "latitude": 37.230408,
+        "longitude": -80.431622
+    },
+    "University Bookstore": {
+        "street": "115 Kent St.",
+        "city": "Blacksburg",
+        "state": "Virginia",
+        "zip_code": "24061",
+        "country": "United States",
+        "latitude": 37.228171,
+        "longitude": -80.418575
+    },
+    "War Memorial Hall": {
+        "street": "370 Drillfield Drive",
+        "city": "Blacksburg",
+        "state": "Virginia",
+        "zip_code": "24061",
+        "country": "United States",
+        "latitude": 37.226296,
+        "longitude": -80.420595
+    },
+    "Wallace Hall": {
+        "street": "295 West Campus Drive",
+        "city": "Blacksburg",
+        "state": "Virginia",
+        "zip_code": "24061",
+        "country": "United States",
+        "latitude": 37.222975,
+        "longitude": -80.424275
+    },
+    "Public Safety Building": {
+        "street": "330 Sterrett Dr.",
+        "city": "Blacksburg",
+        "state": "Virginia",
+        "zip_code": "24061",
+        "country": "United States",
+        "latitude": 37.218714,
+        "longitude": -80.416361
+    },
+    "Miles Hall": {
+        "street": "410 Washington St. SW",
+        "city": "Blacksburg",
+        "state": "Virginia",
+        "zip_code": "24061",
+        "country": "United States",
+        "latitude": 37.225512,
+        "longitude": -80.416965
+    },
+    "Patton Hall": {
+        "street": "750 Drillfield Drive",
+        "city": "Blacksburg",
+        "state": "Virginia",
+        "zip_code": "24061",
+        "country": "United States",
+        "latitude": 37.229231,
+        "longitude": -80.422207
+    },
+    "Price Hall": {
+        "street": "170 Drillfield Drive",
+        "city": "Blacksburg",
+        "state": "Virginia",
+        "zip_code": "24061",
+        "country": "United States",
+        "latitude": 37.225744,
+        "longitude": -80.424086
+    },
+    "Moss Arts Center": {
+        "street": "190 Alumni Mall",
+        "city": "Blacksburg",
+        "state": "Virginia",
+        "zip_code": "24061",
+        "country": "United States",
+        "latitude": 37.231773,
+        "longitude": -80.418408
+    },
+    "Johnson Hall": {
+        "street": "500 Washington St SW",
+        "city": "Blacksburg",
+        "state": "Virginia",
+        "zip_code": "24061",
+        "country": "United States",
+        "latitude": 37.225551,
+        "longitude": -80.417729
+    },
+    "Perry Street Parking Deck": {
+        "street": "1330 Perry St.",
+        "city": "Blacksburg",
+        "state": "Virginia",
+        "zip_code": "24061",
+        "country": "United States",
+        "latitude": 37.231197,
+        "longitude": -80.426289
+    },
+    "Holtzman Alumni Center": {
+        "street": "901 Prices Fork Road",
+        "city": "Blacksburg",
+        "state": "Virginia",
+        "zip_code": "24061",
+        "country": "United States",
+        "latitude": 37.230408,
+        "longitude": -80.431622
+    },
+    "Lane Stadium/Worsham Field": {
+        "street": "185 Beamer Way",
+        "city": "Blacksburg",
+        "state": "Virginia",
+        "zip_code": "24061",
+        "country": "United States",
+        "latitude": 37.220511,
+        "longitude": -80.416793
+    },
+    "Harry T. Peters Jr. Large Animal Clinic": {
+        "street": "285 Duck Pond Drive",
+        "city": "Blacksburg",
+        "state": "Virginia",
+        "zip_code": "24061",
+        "country": "United States",
+        "latitude": 37.21794,
+        "longitude": -80.429346
+    },
+    "Fralin Life Science Institute": {
+        "street": "360 West Campus Drive",
+        "city": "Blacksburg",
+        "state": "Virginia",
+        "zip_code": "24061",
+        "country": "United States",
+        "latitude": 37.224116,
+        "longitude": -80.423497
+    },
+    "Cheatham Hall": {
+        "street": "310 West Campus Drive",
+        "city": "Blacksburg",
+        "state": "Virginia",
+        "zip_code": "24061",
+        "country": "United States",
+        "latitude": 37.223915,
+        "longitude": -80.422516
+    },
+    "Seitz Hall": {
+        "street": "155 Ag Quad Lane",
+        "city": "Blacksburg",
+        "state": "Virginia",
+        "zip_code": "24061",
+        "country": "United States",
+        "latitude": 37.224767,
+        "longitude": -80.423576
+    },
+    "Torgersen Hall": {
+        "street": "620 Drillfield Drive",
+        "city": "Blacksburg",
+        "state": "Virginia",
+        "zip_code": "24061",
+        "country": "United States",
+        "latitude": 37.229784,
+        "longitude": -80.419973
+    },
+    "Smyth Hall": {
+        "street": "185 Ag Quad Lane",
+        "city": "Blacksburg",
+        "state": "Virginia",
+        "zip_code": "24061",
+        "country": "United States",
+        "latitude": 37.22525,
+        "longitude": -80.423121
+    },
+    "Litton-Reaves Hall": {
+        "street": "175 West Campus Drive",
+        "city": "Blacksburg",
+        "state": "Virginia",
+        "zip_code": "24061",
+        "country": "United States",
+        "latitude": 37.221593,
+        "longitude": -80.423815
+    },
+    "Media Annex": {
+        "street": "130 Otey St. NW",
+        "city": "Blacksburg",
+        "state": "Virginia",
+        "zip_code": "24061",
+        "country": "United States",
+        "latitude": 37.228813,
+        "longitude": -80.415938
+    },
+    "McBryde Hall": {
+        "street": "225 Stanger St.",
+        "city": "Blacksburg",
+        "state": "Virginia",
+        "zip_code": "24061",
+        "country": "United States",
+        "latitude": 37.230631,
+        "longitude": -80.421785
+    },
+    "McComas Hall": {
+        "street": "895 Washington St. SW",
+        "city": "Blacksburg",
+        "state": "Virginia",
+        "zip_code": "24061",
+        "country": "United States",
+        "latitude": 37.220099,
+        "longitude": -80.42266
+    },
+    "Media Building": {
+        "street": "101 Draper Road NW",
+        "city": "Blacksburg",
+        "state": "Virginia",
+        "zip_code": "24061",
+        "country": "United States",
+        "latitude": 37.228824,
+        "longitude": -80.415335
+    },
+    "Carol M. Newman Library": {
+        "street": "560 Drillfield Drive",
+        "city": "Blacksburg",
+        "state": "Virginia",
+        "zip_code": "24061",
+        "country": "United States",
+        "latitude": 37.22877,
+        "longitude": -80.419238
+    },
+    "Pearson Hall East": {
+        "street": "260 Alumni Mall",
+        "city": "Blacksburg",
+        "state": "Virginia",
+        "zip_code": "24061",
+        "country": "United States",
+        "latitude": 37.230887,
+        "longitude": -80.418772
+    },
+    "O'Shaughnessy Hall": {
+        "street": "530 Washington St. SW",
+        "city": "Blacksburg",
+        "state": "Virginia",
+        "zip_code": "24061",
+        "country": "United States",
+        "latitude": 37.225389,
+        "longitude": -80.418322
+    },
+    "Latham Hall": {
+        "street": "220 Ag Quad Lane",
+        "city": "Blacksburg",
+        "state": "Virginia",
+        "zip_code": "24061",
+        "country": "United States",
+        "latitude": 37.224531,
+        "longitude": -80.422579
+    },
+    "Wright House": {
+        "street": "765 West Campus Drive",
+        "city": "Blacksburg",
+        "state": "Virginia",
+        "zip_code": "24061",
+        "country": "United States",
+        "latitude": 37.226833,
+        "longitude": -80.426191
+    },
+    "Campbell Hall": {
+        "street": "300,320 Drillfield Drive",
+        "city": "Blacksburg",
+        "state": "Virginia",
+        "zip_code": "24061",
+        "country": "United States",
+        "latitude": 37.226128,
+        "longitude": -80.421847
+    },
+    "Agnew Hall": {
+        "street": "460 West Campus Drive",
+        "city": "Blacksburg",
+        "state": "Virginia",
+        "zip_code": "24061",
+        "country": "United States",
+        "latitude": 37.224782,
+        "longitude": -80.424127
+    },
+    "Burchard Hall": {
+        "street": "1327 Perry St.",
+        "city": "Blacksburg",
+        "state": "Virginia",
+        "zip_code": "24061",
+        "country": "United States",
+        "latitude": 37.229582,
+        "longitude": -80.424677
+    },
+    "Henderson Hall": {
+        "street": "195 Alumni Mall",
+        "city": "Blacksburg",
+        "state": "Virginia",
+        "zip_code": "24061",
+        "country": "United States",
+        "latitude": 37.23029,
+        "longitude": -80.416902
+    },
+    "Food Science and Technology Building": {
+        "street": "360 Duck Pond Drive",
+        "city": "Blacksburg",
+        "state": "Virginia",
+        "zip_code": "24061",
+        "country": "United States",
+        "latitude": 37.219879,
+        "longitude": -80.425327
+    },
+    "Davidson Hall": {
+        "street": "1040 Drillfield Drive",
+        "city": "Blacksburg",
+        "state": "Virginia",
+        "zip_code": "24061",
+        "country": "United States",
+        "latitude": 37.227119,
+        "longitude": -80.425146
+    },
+    "Hahn Hall-North Wing": {
+        "street": "900 West Campus Drive",
+        "city": "Blacksburg",
+        "state": "Virginia",
+        "zip_code": "24061",
+        "country": "United States",
+        "latitude": 37.228317,
+        "longitude": -80.426314
+    },
+    "Saunders Hall": {
+        "street": "490 West Campus Drive",
+        "city": "Blacksburg",
+        "state": "Virginia",
+        "zip_code": "24061",
+        "country": "United States",
+        "latitude": 37.224923,
+        "longitude": -80.424373
+    },
+    "Whittemore Hall": {
+        "street": "1185 Perry St.",
+        "city": "Blacksburg",
+        "state": "Virginia",
+        "zip_code": "24061",
+        "country": "United States",
+        "latitude": 37.231077,
+        "longitude": -80.424452
+    },
+    "Peddrew-Yates Residence Hall": {
+        "street": "610 Washington St. SW",
+        "city": "Blacksburg",
+        "state": "Virginia",
+        "zip_code": "24061",
+        "country": "United States",
+        "latitude": 37.224126,
+        "longitude": -80.419065
+    },
+    "Randolph Hall": {
+        "street": "460 Old Turner St.",
+        "city": "Blacksburg",
+        "state": "Virginia",
+        "zip_code": "24061",
+        "country": "United States",
+        "latitude": 37.230718,
+        "longitude": -80.423239
+    },
+    "Rector Field House": {
+        "street": "230 Beamer Way",
+        "city": "Blacksburg",
+        "state": "Virginia",
+        "zip_code": "24061",
+        "country": "United States",
+        "latitude": 37.218995,
+        "longitude": -80.421681
+    },
+    "Old Security Building": {
+        "street": "310 Stanger St.",
+        "city": "Blacksburg",
+        "state": "Virginia",
+        "zip_code": "24061",
+        "country": "United States",
+        "latitude": 37.231489,
+        "longitude": -80.421589
+    },
+    "Newman Hall": {
+        "street": "200 Kent St.",
+        "city": "Blacksburg",
+        "state": "Virginia",
+        "zip_code": "24061",
+        "country": "United States",
+        "latitude": 37.226132,
+        "longitude": -80.417874
+    },
+    "Human and Agricultural Biosciences Building I": {
+        "street": "1230 Washington St. SW",
+        "city": "Blacksburg",
+        "state": "Virginia",
+        "zip_code": "24061",
+        "country": "United States",
+        "latitude": 37.220461,
+        "longitude": -80.427558
+    },
+    "Hahn Garden Pavilion and Horticulture Garden": {
+        "street": "200 Garden Lane",
+        "city": "Blacksburg",
+        "state": "Virginia",
+        "zip_code": "24061",
+        "country": "United States",
+        "latitude": 37.219152,
+        "longitude": -80.424143
+    },
+    "Student Services Building": {
+        "street": "800 Washington St. SW",
+        "city": "Blacksburg",
+        "state": "Virginia",
+        "zip_code": "24061",
+        "country": "United States",
+        "latitude": 37.222092,
+        "longitude": -80.421837
+    },
+    "Parking Services Building": {
+        "street": "505 Beamer Way",
+        "city": "Blacksburg",
+        "state": "Virginia",
+        "zip_code": "24061",
+        "country": "United States",
+        "latitude": 37.216082,
+        "longitude": -80.418382
+    },
+    "Sterrett Facility Complex": {
+        "street": "230 Sterrett Dr.",
+        "city": "Blacksburg",
+        "state": "Virginia",
+        "zip_code": "24061",
+        "country": "United States",
+        "latitude": 37.219673,
+        "longitude": -80.413795
+    },
+    "Hillcrest Hall": {
+        "street": "385 West Campus Drive",
+        "city": "Blacksburg",
+        "state": "Virginia",
+        "zip_code": "24061",
+        "country": "United States",
+        "latitude": 37.223907,
+        "longitude": -80.425017
+    },
+    "Engel Hall": {
+        "street": "340 West Campus Drive",
+        "city": "Blacksburg",
+        "state": "Virginia",
+        "zip_code": "24061",
+        "country": "United States",
+        "latitude": 37.223457,
+        "longitude": -80.423609
+    },
+    "Pamplin Hall": {
+        "street": "880 West Campus Drive",
+        "city": "Blacksburg",
+        "state": "Virginia",
+        "zip_code": "24061",
+        "country": "United States",
+        "latitude": 37.228767,
+        "longitude": -80.42462
+    },
+    "Merryman Athletic Facility": {
+        "street": "25 Beamer Way",
+        "city": "Blacksburg",
+        "state": "Virginia",
+        "zip_code": "24061",
+        "country": "United States",
+        "latitude": 37.221674,
+        "longitude": -80.419097
+    },
+    "Alphin-Stuart Livestock Teaching Arena": {
+        "street": "500 Plantation Road",
+        "city": "Blacksburg",
+        "state": "Virginia",
+        "zip_code": "24061",
+        "country": "United States",
+        "latitude": 37.219274,
+        "longitude": -80.43988
+    },
+    "Oak Lane Community": {
+        "street": "Oak Lane",
+        "city": "Blacksburg",
+        "state": "Virginia",
+        "zip_code": "24061",
+        "country": "United States",
+        "latitude": 37.226702,
+        "longitude": -80.437748
+    },
+    "Visitor and Undergraduate Admissions Center": {
+        "street": "925 Prices Fork Road",
+        "city": "Blacksburg",
+        "state": "Virginia",
+        "zip_code": "24061",
+        "country": "United States",
+        "latitude": 37.23085,
+        "longitude": -80.434146
+    },
+    "Richard B. Talbot Educational Resources Center": {
+        "street": "265 Duck Pond Drive",
+        "city": "Blacksburg",
+        "state": "Virginia",
+        "zip_code": "24061",
+        "country": "United States",
+        "latitude": 37.218461,
+        "longitude": -80.424173
+    },
+    "William E. Lavery Animal Health Research Center": {
+        "street": "295 Duck Pond Drive",
+        "city": "Blacksburg",
+        "state": "Virginia",
+        "zip_code": "24061",
+        "country": "United States",
+        "latitude": 37.218458,
+        "longitude": -80.428296
+    },
+    "Beamer-Lawson Indoor Practice Facility": {
+        "street": "530 Stadium Road",
+        "city": "Blacksburg",
+        "state": "Virginia",
+        "zip_code": "24061",
+        "country": "United States",
+        "latitude": 37.179115,
+        "longitude": -80.351482
+    },
+    "Burruss Hall": {
+        "street": "800 Drillfield Drive",
+        "city": "Blacksburg",
+        "state": "Virginia",
+        "zip_code": "24061",
+        "country": "United States",
+        "latitude": 37.229003,
+        "longitude": -80.423714
+    },
+    "Lane Hall": {
+        "street": "280 Alumni Mall",
+        "city": "Blacksburg",
+        "state": "Virginia",
+        "zip_code": "24061",
+        "country": "United States",
+        "latitude": 37.230911,
+        "longitude": -80.419785
+    },
+    "G. Burke Johnston Student Center": {
+        "street": "920 West Campus Drive",
+        "city": "Blacksburg",
+        "state": "Virginia",
+        "zip_code": "24061",
+        "country": "United States",
+        "latitude": 37.229227,
+        "longitude": -80.424583
+    },
+    "Femoyer Hall": {
+        "street": "280 Stanger St.",
+        "city": "Blacksburg",
+        "state": "Virginia",
+        "zip_code": "24061",
+        "country": "United States",
+        "latitude": 37.231211,
+        "longitude": -80.42138
+    },
+    "Virginia-Maryland Regional College of Veterinary Medicine": {
+        "street": "Duck Pond Drive",
+        "city": "Blacksburg",
+        "state": "Virginia",
+        "zip_code": "24061",
+        "country": "United States",
+        "latitude": 37.179115,
+        "longitude": -80.351482
+    },
+    "College of Liberal Arts and Human Sciences Building": {
+        "street": "200 Stanger St.",
+        "city": "Blacksburg",
+        "state": "Virginia",
+        "zip_code": "24061",
+        "country": "United States",
+        "latitude": 37.230621,
+        "longitude": -80.420882
+    },
+    "Sandy Hall": {
+        "street": "210 Drillfield Drive",
+        "city": "Blacksburg",
+        "state": "Virginia",
+        "zip_code": "24061",
+        "country": "United States",
+        "latitude": 37.225809,
+        "longitude": -80.423504
+    },
+    "Robeson Hall": {
+        "street": "850 West Campus Drive",
+        "city": "Blacksburg",
+        "state": "Virginia",
+        "zip_code": "24061",
+        "country": "United States",
+        "latitude": 37.228222,
+        "longitude": -80.425112
+    },
+    "Owens Hall": {
+        "street": "150 Kent St.",
+        "city": "Blacksburg",
+        "state": "Virginia",
+        "zip_code": "24061",
+        "country": "United States",
+        "latitude": 37.226669,
+        "longitude": -80.418866
+    },
+    "Monteith Hall": {
+        "street": "171 Turner St. NW",
+        "city": "Blacksburg",
+        "state": "Virginia",
+        "zip_code": "24061",
+        "country": "United States",
+        "latitude": 37.232142,
+        "longitude": -80.419519
+    },
+    "Life Sciences I Facility": {
+        "street": "970 Washington St. SW",
+        "city": "Blacksburg",
+        "state": "Virginia",
+        "zip_code": "24061",
+        "country": "United States",
+        "latitude": 37.220954,
+        "longitude": -80.424653
+    },
+    "Dairy Science Complex - Kentland Farm": {
+        "street": "5250 Whitethorne Road",
+        "city": "Blacksburg",
+        "state": "Virginia",
+        "zip_code": "24061",
+        "country": "United States",
+        "latitude": 37.202069,
+        "longitude": -80.56465
+    },
+    "Kelly Hall": {
+        "street": "325 Stanger St.",
+        "city": "Blacksburg",
+        "state": "Virginia",
+        "zip_code": "24061",
+        "country": "United States",
+        "latitude": 37.231396,
+        "longitude": -80.422429
+    },
+    "Ambler Johnston Hall": {
+        "street": "700,720 Washington St. SW",
+        "city": "Blacksburg",
+        "state": "Virginia",
+        "zip_code": "24061",
+        "country": "United States",
+        "latitude": 37.223164,
+        "longitude": -80.420707
+    },
+    "Architecture Annex": {
+        "street": "140 Otey St. NW",
+        "city": "Blacksburg",
+        "state": "Virginia",
+        "zip_code": "24061",
+        "country": "United States",
+        "latitude": 37.228603,
+        "longitude": -80.41629
+    },
+    "Holden Hall": {
+        "street": "445 Old Turner St.",
+        "city": "Blacksburg",
+        "state": "Virginia",
+        "zip_code": "24061",
+        "country": "United States",
+        "latitude": 37.230369,
+        "longitude": -80.422386
+    },
+    "Derring Hall": {
+        "street": "926 West Campus Drive",
+        "city": "Blacksburg",
+        "state": "Virginia",
+        "zip_code": "24061",
+        "country": "United States",
+        "latitude": 37.229088,
+        "longitude": -80.425607
+    },
+    "Hahn Hall-South Wing": {
+        "street": "800 West Campus Drive",
+        "city": "Blacksburg",
+        "state": "Virginia",
+        "zip_code": "24061",
+        "country": "United States",
+        "latitude": 37.227873,
+        "longitude": -80.42562
+    },
+    "Eggleston Hall": {
+        "street": "410,440,500 Drillfield Drive",
+        "city": "Blacksburg",
+        "state": "Virginia",
+        "zip_code": "24061",
+        "country": "United States",
+        "latitude": 37.226797,
+        "longitude": -80.420091
+    },
+    "Art and Design Learning Center": {
+        "street": "355 Old Turner St.",
+        "city": "Blacksburg",
+        "state": "Virginia",
+        "zip_code": "24061",
+        "country": "United States",
+        "latitude": 37.231706,
+        "longitude": -80.420727
+    },
+    "Armory": {
+        "street": "201 Draper Road NW",
+        "city": "Blacksburg",
+        "state": "Virginia",
+        "zip_code": "24061",
+        "country": "United States",
+        "latitude": 37.229345,
+        "longitude": -80.415812
+    },
+    "Shanks Hall": {
+        "street": "181 Turner St. NW",
+        "city": "Blacksburg",
+        "state": "Virginia",
+        "zip_code": "24061",
+        "country": "United States",
+        "latitude": 37.231854,
+        "longitude": -80.419833
+    },
+    "Slusher Hall": {
+        "street": "201 Ag Quad Lane",
+        "city": "Blacksburg",
+        "state": "Virginia",
+        "zip_code": "24061",
+        "country": "United States",
+        "latitude": 37.22529,
+        "longitude": -80.421598
+    },
+    "Norris Hall": {
+        "street": "495 Old Turner St. ",
+        "city": "Blacksburg",
+        "state": "Virginia",
+        "zip_code": "24061",
+        "country": "United States",
+        "latitude": 37.229444,
+        "longitude": -80.423126
+    },
+    "Institute for Critical Technology and Applied Science (ICTAS II)": {
+        "street": "1075 Life Science Circle",
+        "city": "Blacksburg",
+        "state": "Virginia",
+        "zip_code": "24061",
+        "country": "United States",
+        "latitude": 37.222147,
+        "longitude": -80.42565
+    },
+    "Classroom Building": {
+        "street": "1455 Perry Street",
+        "city": "Blacksburg",
+        "state": "Virginia",
+        "zip_code": "24061",
+        "country": "United States",
+        "latitude": 37.229341,
+        "longitude": -80.426987
+    },
+    "Pearson Hall West": {
+        "street": "310 Alumni Mall",
+        "city": "Blacksburg",
+        "state": "Virginia",
+        "zip_code": "24061",
+        "country": "United States",
+        "latitude": 37.230137,
+        "longitude": -80.419936
+    },
+    "Whitehurst Hall": {
+        "street": "240 Kent St.",
+        "city": "Blacksburg",
+        "state": "Virginia",
+        "zip_code": "24061",
+        "country": "United States",
+        "latitude": 37.226194,
+        "longitude": -80.416803
+    },
+    "Hoge Hall": {
+        "street": "570 Washington St. SW",
+        "city": "Blacksburg",
+        "state": "Virginia",
+        "zip_code": "24061",
+        "country": "United States",
+        "latitude": 37.224545,
+        "longitude": -80.41846
+    },
+    "Data and Decision Sciences": {
+        "street": "727 Prices Fork Road",
+        "city": "Blacksburg",
+        "state": "Virginia",
+        "zip_code": "24061",
+        "country": "United States",
+        "latitude": 37.232057,
+        "longitude": -80.42736
+    },
+    "Corps Leadership and Military Science Building": {
+        "street": "355 Old Turner Street",
+        "city": "Blacksburg",
+        "state": "Virginia",
+        "zip_code": "24061",
+        "country": "United States",
+        "latitude": 37.231706,
+        "longitude": -80.420727
+    }
+}
