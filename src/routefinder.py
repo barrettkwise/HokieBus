@@ -22,30 +22,25 @@ class RouteFinder:
         :type schedule: Schedule
         """
         self.schedule = schedule
-        self.buildings = RouteFinder.get_campus_addresses()
-        self.find_route()
+        address_cache = CacheHandler(
+            cache_file="../data/addresses.json",
+            update_function=RouteFinder.get_campus_addresses,
+        )
+        self.buildings = json.loads(address_cache.cache_file.read_text())
 
-    def find_route(self) -> None:
+    def find_route(self) -> dict[str, str]:
         """
         Finds the best route to take to get to a building on the Virginia Tech campus.
 
-        :return: None
+        :return: A dictionary containing the building and the bus stop to go to.
+        :rtype: dict[str, str]
         """
-
-        address_cache = CacheHandler(
-            "../data/addresses.json",
-            12,
-            RouteFinder.get_campus_addresses,
-        )
-        self.buildings = json.loads(address_cache.cache_file.read_text())
         bus_stop = bt4u.get_nearest_stops(
             self.schedule.init_location.latitude,
             self.schedule.init_location.longitude,
             1,
-        )
-        print(
-            f"Closest bus stop to {self.schedule.init_location.street} is {bus_stop}."
-        )
+        )["DocumentElement"]["StopDistances"]
+        results = {self.schedule.init_location.street: bus_stop}
         for course in self.schedule.courses:
             building = course["building"]
             if building not in self.buildings.keys():
@@ -54,8 +49,9 @@ class RouteFinder:
             building_address = self.buildings[building]
             bus_stop = bt4u.get_nearest_stops(
                 building_address.get("latitude"), building_address.get("longitude"), 1
-            )
-            print(f"Closest bus stop to {building} is {bus_stop}.")
+            )["DocumentElement"]["StopDistances"]
+            results[building] = bus_stop
+        return results
 
     @staticmethod
     def get_campus_addresses(update: bool = False) -> dict[str, Address] | str:
