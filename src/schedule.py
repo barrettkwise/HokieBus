@@ -1,7 +1,10 @@
 import os
 import re
+from io import BytesIO, TextIOWrapper
 from pathlib import Path
 
+import anvil._serialise
+import anvil.media
 import icalendar as ical
 from geocodio import GeocodioClient
 
@@ -90,16 +93,19 @@ class Schedule:
     :date: 1/16/25
     """
 
-    def __init__(self, init_location: Address, source_file: str = "") -> None:
+    def __init__(
+        self, init_location: Address, source_file: str | anvil._serialise.StreamingMedia
+    ) -> None:
         """
         :param source_file: The path to the .ics file containing the user's schedule.
-        :type source_file: str
+        :type source_file: str | anvil._serialise.StreamingMedia
         :param init_location: The address of where the user is located, used to determine the closest bus stop.
         :type init_location: Address
         """
-        self.__source = Path(source_file)
-        if self.__source.suffix != ".ics":
-            raise ValueError("The source file must be a .ics file.")
+        if isinstance(source_file, anvil._serialise.StreamingMedia):
+            self.__source = BytesIO(source_file.get_bytes())
+        else:
+            self.__source = Path(source_file)
         self.init_location = init_location
         self.courses = self.__read_schedule()
 
@@ -110,21 +116,25 @@ class Schedule:
         :return: A list of dictionaries containing the course information.
         :rtype: list[dict[str, str]]
         """
-
         loc_pattern = r"Campus:\s*(.*?)\s*Building:\s*(.*?)\s*Room:\s*([0-9]*)"
         courses = []
-        with self.__source.open() as f:
-            cal = ical.Calendar.from_ical(f.read())
-            for event in cal.walk("VEVENT"):
-                location = str(event.get("location")).strip()
-                match = re.search(loc_pattern, location)
-                campus = ""
-                building = ""
-                room = ""
-                if match:
-                    campus = match.group(1)
-                    building = match.group(2)
-                    room = match.group(3)
+
+        if isinstance(self.__source, BytesIO):
+            f = TextIOWrapper(self.__source)
+        else:
+            f = self.__source.open()
+
+        cal = ical.Calendar.from_ical(f.read())
+        for event in cal.walk("VEVENT"):
+            location = str(event.get("location")).strip()
+            match = re.search(loc_pattern, location)
+            campus = ""
+            building = ""
+            room = ""
+            if match:
+                campus = match.group(1)
+                building = match.group(2)
+                room = match.group(3)
 
                 summary = str(event.get("summary")).strip().split()
                 course_code = summary[-3] + " " + summary[-2]
