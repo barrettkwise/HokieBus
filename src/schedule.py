@@ -37,6 +37,7 @@ class Address:
         :param country: The country.
         :type country: str
         """
+        self.client = GeocodioClient(os.getenv("GEOCODE_KEY"))
         self.street = address
         self.city = city
         self.state = state
@@ -52,9 +53,7 @@ class Address:
         :return: The latitude and longitude of the address.
         :rtype: tuple[float, float]
         """
-        client = GeocodioClient(os.getenv("GEOCODE_KEY"))
-
-        location = client.geocode(
+        location = self.client.geocode(
             f"{self.street}, {self.city}, {self.state} {self.zip_code}",
             country=self.country,
             limit=3,
@@ -64,6 +63,34 @@ class Address:
 
         coords = location["results"][0]["location"]
         return (coords["lat"], coords["lng"])
+
+    def convert_gps_to_address(self, latitude: float, longitude: float) -> str:
+        """
+        Convert GPS coordinates to an address.
+
+        :param latitude: The latitude.
+        :type latitude: float
+        :param longitude: The longitude.
+        :type longitude: float
+        :return: The address corresponding to the GPS coordinates.
+        :rtype: Address
+        """
+        location = self.client.reverse((latitude, longitude))
+        if location is None:
+            raise ValueError("Invalid GPS coordinates.")
+
+        address = location["results"][0]["address_components"]
+        return (
+            address["number"]
+            + ","
+            + address["formatted_street"]
+            + ","
+            + address["city"]
+            + ","
+            + address["state"]
+            + ","
+            + address["zip"]
+        )
 
     def __str__(self) -> str:
         return (
