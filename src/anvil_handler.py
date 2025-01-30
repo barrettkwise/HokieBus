@@ -1,5 +1,4 @@
 import os
-from operator import add
 
 import anvil._serialise
 import anvil.server
