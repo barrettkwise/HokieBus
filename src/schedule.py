@@ -5,6 +5,7 @@ from pathlib import Path
 
 import anvil._serialise
 import anvil.media
+import anvil.server
 import icalendar as ical
 from geocodio import GeocodioClient
 
@@ -19,11 +20,11 @@ class Address:
 
     def __init__(
         self,
-        address: str,
-        city: str,
-        state: str,
-        zip_code: str,
-        country: str,
+        address: str = "",
+        city: str = "",
+        state: str = "",
+        zip_code: str = "",
+        country: str = "",
     ) -> None:
         """
         :param street: The street address.
@@ -43,8 +44,8 @@ class Address:
         self.state = state
         self.zip_code = zip_code
         self.country = country
-        self.latitude = self.__convert_address_to_gps()[0]
-        self.longitude = self.__convert_address_to_gps()[1]
+        self.latitude = self.__convert_address_to_gps()[0] if address != "" else None
+        self.longitude = self.__convert_address_to_gps()[1] if address != "" else None
 
     def __convert_address_to_gps(self) -> tuple[float, float]:
         """

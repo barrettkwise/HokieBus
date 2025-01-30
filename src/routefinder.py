@@ -36,8 +36,12 @@ class RouteFinder:
         :rtype: dict[str, str]
         """
         bus_stop = bt4u.get_nearest_stops(
-            self.schedule.init_location.latitude,
-            self.schedule.init_location.longitude,
+            self.schedule.init_location.latitude
+            if self.schedule.init_location.latitude is not None
+            else 0.0,
+            self.schedule.init_location.longitude
+            if self.schedule.init_location.longitude is not None
+            else 0.0,
             1,
         )["DocumentElement"]["StopDistances"]
         results = {self.schedule.init_location.street: bus_stop}

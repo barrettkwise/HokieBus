@@ -1,4 +1,5 @@
 import os
+from operator import add
 
 import anvil._serialise
 import anvil.server
@@ -22,43 +23,36 @@ class AnvilHandler:
         if not anvil_key:
             raise ValueError("ANVIL_KEY not found in environment variables.")
         anvil.server.connect(anvil_key)
-        self.start_location: Address
-        self.schedule_file: anvil._serialise.StreamingMedia
 
-    @anvil.server.callable
     @staticmethod
-    def call_me(location_cords: tuple[float, float]) -> None:
+    @anvil.server.callable
+    def call_me(
+        latitude: float, longitude: float, calendar: anvil._serialise.StreamingMedia
+    ) -> dict[str, str]:
         """
-        A function that is called from the Anvil app.
+        A test function to check if the Anvil server is working.
 
-        :param location_cords: The GPS coordinates of the location.
-        :type location_cords: tuple[float, float]
+        :param latitude: The latitude.
+        :type latitude: float
+        :param longitude: The longitude.
+        :type longitude: float
+        :param calendar: Anvil StreamingMedia object containing the calendar data.
+        :type calendar: anvil._serialise.StreamingMedia
+        :return: A dictionary containing the route information.
+        :rtype: dict[str, str]
         """
-
-    def set_start_location(self, location_string: str) -> None:
-        """
-        Set the start location of the route.
-
-        :param location_string: The start location of the route in the format:
-                                "Street, City, State, ZIP, Country".
-        :type location_string: str
-        """
+        location_string = Address().convert_gps_to_address(latitude, longitude)
         address_parts = location_string.split(",")
+        # print(address_parts)
         if len(address_parts) != 5:
             raise ValueError("Invalid address format.")
-        self.start_location = Address(*address_parts)
 
-    def get_route(self, calendar: anvil._serialise.StreamingMedia) -> dict[str, str]:
-        """
-        Generate a route based on the provided calendar and the start location.
-
-        :param calendar: Anvil StreamingMedia object containing the calendar data.
-        :return: A dictionary containing the route information.
-        """
-        if not self.start_location:
-            raise ValueError("Start location has not been set.")
-
-        schedule = Schedule(self.start_location, calendar)
-
-        route_finder = RouteFinder(schedule)
-        return route_finder.find_route()
+        address = Address(
+            address_parts[0],
+            address_parts[1],
+            address_parts[2],
+            address_parts[3],
+            address_parts[4],
+        )
+        schedule = Schedule(address, calendar)
+        return RouteFinder(schedule).find_route()
