@@ -10,3 +10,9 @@ HokieBus is a web application designed to help Virginia Tech students plan their
 - **Blacksburg Transit Routes**: Access real-time bus schedules for BT routes, including estimated arrival times.  
 - **Custom Recommendations**: Identify which buses and routes fit your timetable for on-time arrival at class.  
 - **Campus Map**: Visualize routes and stops on an interactive map to understand connections and locations better.
+
+***
+
+### How to get a schedule file
+
+https://github.com/user-attachments/assets/4046b1a6-dd72-44ab-8eb2-3e5901819ed8
